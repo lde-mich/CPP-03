@@ -6,7 +6,7 @@
 /*   By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 18:12:49 by lde-mich          #+#    #+#             */
-/*   Updated: 2024/01/18 15:21:25 by lde-mich         ###   ########.fr       */
+/*   Updated: 2024/01/18 16:14:23 by lde-mich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,8 @@ class ClapTrap
 		void setHitPoints(int hitPoints);
 		void setEnergyPoints(int energyPoints);
 		void setAttackDamage(int attackDamage);
+
+		ClapTrap operator = (ClapTrap &clapTrap);
 
 		ClapTrap();
 		ClapTrap(std::string name);

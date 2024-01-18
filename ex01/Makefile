@@ -6,7 +6,7 @@
 #    By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/30 18:46:47 by lde-mich          #+#    #+#              #
-#    Updated: 2024/01/17 18:12:07 by lde-mich         ###   ########.fr        #
+#    Updated: 2024/01/18 15:57:09 by lde-mich         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ CC				= c++
 RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror -std=c++98
 
-NAME			= serenaMyLove!
+NAME			= serenaMyLove
 
 %.o:%.cpp
 				$(CC) $(CFLAGS) -c $< -o $(<:.cpp=.o)

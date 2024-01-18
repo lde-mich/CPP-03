@@ -6,7 +6,7 @@
 /*   By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 11:18:35 by lde-mich          #+#    #+#             */
-/*   Updated: 2024/01/18 15:29:51 by lde-mich         ###   ########.fr       */
+/*   Updated: 2024/01/18 16:00:57 by lde-mich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,22 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::guardGate()
 {
-    
+    std::cout<< this->name << "enters guardGate mode" <<std::endl;
 }
 
+void ScavTrap::attack(const std::string& target)
+{
+    if (!this->energyPoints || !this->hitPoints)
+    {
+		std::cout<< this->name << " Cannot attack " <<std::endl;   
+    }
+	else
+	{
+		this->energyPoints -= 1;
+		std::cout<< "ScavTrap is attacking" <<std::endl;
+        std::cout<< this->name << " attacks " << target << " causing " << this->attackDamage << " points of damage!" <<std::endl;
+	}
+}
 
 
 
