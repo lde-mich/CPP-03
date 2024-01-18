@@ -6,15 +6,16 @@
 /*   By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 18:12:49 by lde-mich          #+#    #+#             */
-/*   Updated: 2024/01/17 19:30:28 by lde-mich         ###   ########.fr       */
+/*   Updated: 2024/01/18 15:21:25 by lde-mich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#pragma once
 #include <iostream>
 
 class ClapTrap
 {
-    private:
+    protected:
 		std::string name;
 		int	hitPoints;
 		int energyPoints;
