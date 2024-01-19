@@ -6,7 +6,7 @@
 /*   By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 11:18:39 by lde-mich          #+#    #+#             */
-/*   Updated: 2024/01/19 10:46:11 by lde-mich         ###   ########.fr       */
+/*   Updated: 2024/01/19 11:19:13 by lde-mich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ class ScavTrap: public ClapTrap
 	public:
 		void guardGate();
 		void attack(const std::string& target);
+		ScavTrap operator = (ScavTrap  &ScavTrap);
 
 		ScavTrap();
 		ScavTrap(std::string name);

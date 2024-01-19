@@ -6,7 +6,7 @@
 /*   By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 11:18:35 by lde-mich          #+#    #+#             */
-/*   Updated: 2024/01/19 10:46:38 by lde-mich         ###   ########.fr       */
+/*   Updated: 2024/01/19 11:18:57 by lde-mich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,16 @@ void ScavTrap::attack(const std::string& target)
 }
 
 
-
+ScavTrap ScavTrap::operator = (ScavTrap  &ScavTrap)
+{
+    std::cout<<"Copy assignment operator called"<< std::endl;
+	this->name = ScavTrap.getName();
+    this->hitPoints = ScavTrap.getHitPoints();
+    this->energyPoints = ScavTrap.getEnergyPoints();
+    this->attackDamage = ScavTrap.getAttackDamage();
+	
+	return (*this);
+}
 
 
 

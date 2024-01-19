@@ -6,7 +6,7 @@
 /*   By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 19:14:07 by lde-mich          #+#    #+#             */
-/*   Updated: 2024/01/19 10:46:33 by lde-mich         ###   ########.fr       */
+/*   Updated: 2024/01/19 11:19:56 by lde-mich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,16 @@ void FragTrap::attack(const std::string& target)
 }
 
 
+FragTrap FragTrap::operator = (FragTrap  &FragTrap)
+{
+    std::cout<<"Copy assignment operator called"<< std::endl;
+	this->name = FragTrap.getName();
+    this->hitPoints = FragTrap.getHitPoints();
+    this->energyPoints = FragTrap.getEnergyPoints();
+    this->attackDamage = FragTrap.getAttackDamage();
+	
+	return (*this);
+}
 
 
 
