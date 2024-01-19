@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/18 11:18:39 by lde-mich          #+#    #+#             */
-/*   Updated: 2024/01/18 19:00:14 by lde-mich         ###   ########.fr       */
+/*   Created: 2024/01/17 18:12:41 by lde-mich          #+#    #+#             */
+/*   Updated: 2024/01/18 15:56:56 by lde-mich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#pragma once
-#include <iostream>
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
-class ScavTrap: public ClapTrap
+int main ()
 {
-	public:
-		void guardGate();
-		void attack(const std::string& target);
+    ClapTrap a ("Lde-mich");
+    ClapTrap b("Aldisti");
+	
+	ScavTrap c("Dcastagn");
 
-		ScavTrap();
-		ScavTrap(std::string name);
-		~ScavTrap();
-};
+    a.attack("Aldisti");
+    b.attack("Lde-mich");
+	c.attack("Aldisti");
+}
