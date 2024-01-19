@@ -6,7 +6,7 @@
 /*   By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 19:14:07 by lde-mich          #+#    #+#             */
-/*   Updated: 2024/01/19 08:49:19 by lde-mich         ###   ########.fr       */
+/*   Updated: 2024/01/19 08:55:37 by lde-mich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,12 @@ FragTrap::~FragTrap()
     std::cout<< "FragTrap destructor called" <<std::endl;
 }
 
+
+
+void FragTrap::highFivesGuys(void)
+{
+    
+}
 
 
 
