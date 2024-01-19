@@ -6,7 +6,7 @@
 /*   By: lde-mich <lde-mich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/17 18:12:45 by lde-mich          #+#    #+#             */
-/*   Updated: 2024/01/17 20:29:47 by lde-mich         ###   ########.fr       */
+/*   Updated: 2024/01/19 10:15:25 by lde-mich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 ClapTrap::ClapTrap()
 {
 	std::cout<< "Default constructor called" <<std::endl;
+	this->hitPoints = 10;
+    this->energyPoints = 10;
+    this->attackDamage = 0;
 }
 
 ClapTrap::ClapTrap(std::string name)
@@ -109,6 +112,17 @@ void ClapTrap::beRepaired(unsigned int amount)
 	}
 }
 
+
+ClapTrap ClapTrap::operator = (ClapTrap  &clapTrap)
+{
+    std::cout<<"Copy assignment operator called"<< std::endl;
+	this->name = clapTrap.getName();
+    this->hitPoints = clapTrap.getHitPoints();
+    this->energyPoints = clapTrap.getEnergyPoints();
+    this->attackDamage = clapTrap.getAttackDamage();
+	
+	return (*this);
+}
 
 
 
